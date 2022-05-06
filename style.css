@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#logo{
+ 
+  align-items: center;
+  padding-left: 18px;
+  border-radius: 40%;
+}
+#login{
+  background-color: #1b2846;
+  color:#7b7c90;
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  border: 1;
+}
+.container{
+  background-color: #192237;
+  padding: 20px 40px;
+  border-radius: 5px;
+}
+.container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+p{
+  text-align: center;
+  margin-bottom: 30px;
+
+}
+.container a {
+  text-decoration: none;
+  color: #e8d7bc;
+}
+.btn{
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  background-color: #3b465e;
+  padding: 15px;
+  font-family: inherit;
+  font-size: 16px;
+  border: 0;
+  border-radius: 5px;
+}
+.btn:focus{
+  outline: 0;
+}
+.btn:active{
+  transform: scale(0.98);
+}
+.text{
+  margin-top: 30px;
+}
+.form-control{
+  position: relative;
+  margin: 20px 0 40px;
+  width: 300px;
+}
+.form-control input{
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #fff;
+  display: block;
+  width: 100%;
+  padding: 15px 0 10px 0;
+  font-size: 18px;
+  color: #fff;
+}
+.form-control input:focus,
+.form-control input:valid{
+  outline: 0;
+  border-bottom-color: rgb(97, 106, 241);
+}
+.form-control label{
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+.form-control label span{
+  display: inline-block;
+  font-size: 18px;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.form-control input:focus + label span,
+.form-control input:valid + label span{
+  color: rgb(97, 106, 241);
+  transform: translateY(-30px);
+}
+
+.slideshow{
+  max-width: fit-content;
+  position: relative;
+  margin: auto;
+}
+.slidefade{
+  display: none;
+}
+
+.fade{
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from{opacity:4}
+  to{opacity: 1;}
+}
+
+.nav{
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  width: 15%;
+  background-color: #192237;
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+ 
+}
+.navitem{
+  display: block;
+  color: #7b7c90;
+  padding: 18px 36px;
+}
+
+.navitem.active{
+  background-color: #04aa6D;
+  color: aliceblue;
+}
+.navitem:hover:not(.active){
+  background-color: #3b465e;
+  color: white;
+}
+#col{
+  color:#7b7c90;
+  font-family:'Muli', sans-serif ;
+  text-decoration: none;
+}
+
+.box1{
+  float: right;
+  width: 50%;
+  height: 10%; 
+}
+.box2{
+  float: right;
+  width: 50px; ;
+  height: 90%;
+
+}
+.reg{
+  font-family: inherit;
+  font-size: 16px;
+  border: 0;
+  text-align: justify;
+}
