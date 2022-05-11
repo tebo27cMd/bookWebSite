@@ -1,23 +1,20 @@
-const labels = document.querySelectorAll('.form-control label')
+////////////////////////////
 
-labels.forEach(label => {
-    label.innerHTML = label.innerText
-    .split('')
-    .map((letter, idx) => `<span style="transition-delay:${idx * 50}ms">${letter}</span>`)
-    .join('')
+const loginForm=document.getElementById("login-form")
+const loginButton=document.getElementById("login-form-submit")
+const loginErrorMsg=document.getElementById("login-error-msg")
+
+loginButton.addEventListener("click", (e)=>{
+    e.preventDefault();
+    const username=loginForm.username.value;
+    const password=loginForm.password.value;
+
+    if (username=="user1" && password==="12345"){
+    alert("login successful!");
+    window.location.href="homepage.html"
+   } else {
+    loginErrorMsg
+ } 
+
 })
-
-let slideIndex=0;
-showslides();
-function showslides(){
-    let i;
-    let slides=
-    document.getElementsByClassName("slidefade");
-    for (i=0; i <slides.length; i++) {
-        slides[i].style.display="none"
-    }
-    slideIndex++;
-    if (slideIndex>slides.length){slideIndex=1}
-    slides[slideIndex-1].style.display="block";
-setTimeout(showslides,2000);
-}
+///////////////////////////////////////////
