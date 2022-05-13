@@ -1,37 +1,29 @@
 <!DOCTYPE html>
+<html>
 <head>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RegisterBookInAccount</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
 
 </head>
 
 <body id="login">
  <div class="container">
-     <form>
-         <img src="../new1/login logo.png" alt="logo" id="logo">
+     <form id="register-form">
+         <img src="img/login logo.png" alt="logo" id="logo">
          <p>Please enter your details</p>
          <div class="form-control">
-             <input type="text" name="Name" placeholder="Name">
-         </div>
-         <div class="form-control">
-             <input type="text" name="Name" placeholder="Surname">
-         </div>
-         <div class="form-control">
-             <input type="text" name="Email" placeholder="Email Address">
-         </div>
-         <div class="form-control">
-             <input type="password" name="pswd" placeholder="password">
-         </div>
-         <div class="form-control">
-            <input type="password" name="repswd" placeholder="re-type password">
-         </div>
+            <input id="name1" type="text" placeholder="Name" value=""/>
+            <input id="pw" type="password" placeholder="Password" value=""/>
          <div>
-         <button class="btn">Register</button>
-         <a class="reg" href="../new1/loginpage.html"><p>Or click here to login</p></a>
+            <input id="rgstr_btn" type="submit" value="get Account" onClick="store()"/>
+         <a class="reg" href="index.html"><p>Or click here to login</p></a>
          </div>
       </form>
  </div>
 </body>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" language="javascript" src="js/login.js"></script>
+</html>

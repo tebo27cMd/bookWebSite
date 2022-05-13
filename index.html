@@ -6,29 +6,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>loginToBookIn</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
 
 </head>
 <body id="login">
   <div class="container">
     <h1>Welcome!</h1>
-    <img src="../new1/login logo.png" alt="logo" id="logo">
+    <img src="img/login logo.png" alt="logo" id="logo">
     <p>Please enter login details</p>
     <div id="login-error-msg-holder">
       <p id="login-error-msg">Invalid username<span id="error-msg-second-line">and/or password</span></p>
     </div>
+   
     <form id="login-form" action="js.js" method="post">
-      <div class="form-control">
+     <div class="form-control">
         <input type="text" placeholder="username" name="username"required>
-      </div>
+     </div>
+
       <div class="form-control">
-        
-        <input type="password" placeholder="Password" name="password" required>
+       <input type="password" placeholder="Password" name="password" required>
       </div>
-      <input href="indexx.html"  type="submit" value="login" id="login-form-submit">
-      <a class="reg" href="index.html"><p>Or click here to register new account</p></a>
+
+     <input href="homepage.html"  type="submit" value="login" id="login-form-submit">
+
+      <a class="reg" href="reg.html"><p>Or click here to register new account</p></a>
     </form>
   </div>
-  <script src="js.js"></script>
 </body>
+<script src="js/js.js"></script>
 </html>

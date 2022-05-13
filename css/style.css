@@ -125,6 +125,7 @@ p{
   height: 100%;
   position: fixed;
   overflow: auto;
+  border-radius: 37px;
  
 }
 .navitem{
@@ -198,7 +199,8 @@ section{
   background-color:#192237;
   border-radius: 37px;
   border:1px #7b7c90;
-  border-style: solid 
+  
+  
 }
 .product-card-static{
   background-image: url("../new1/img/boo2.jpg");
@@ -246,6 +248,9 @@ section{
 }
 .mySlides {
   display: none;
+  padding-right: 30px
+  
+  ;
 }
 .dot {
   cursor: pointer;
@@ -299,4 +304,22 @@ section{
 .column {
   flex: 33.33%;
   padding: 15px;
+}
+.column2 {
+  flex: 33.33%;
+  padding-left: 47px;
+
+}
+.login-error-msg{
+  display: none;
+}
+.product-box{
+ display:flex;
+ padding: 150% 150%;
+ 
+}
+.sizetext{
+  text-align: center;
+  text-decoration: #04aa6D;
+  color: #04aa6D;
 }
