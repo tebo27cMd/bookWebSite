@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 
     <meta charset="UTF-8">
@@ -9,20 +9,33 @@
 
 </head>
 
-<body id="login">
+<body  id="login">
  <div class="container">
-     <form id="register-form">
-         <img src="img/login logo.png" alt="logo" id="logo">
-         <p>Please enter your details</p>
-         <div class="form-control">
-            <input id="nam1" type="text" placeholder="Name" value=""/>
-            <input id="pw" type="password" placeholder="Password" value=""/>
-         <div>
-            <input id="rgstr_btn" type="submit" value="get Account" onClick="store()"/>
-         <a class="reg" href="index.html"><p>Or click here to login</p></a>
-         </div>
-      </form>
+    <h2 class="text">SIGNUP</h1>
+    <form role="form" onsubmit="signUp(event);" autocomplete="off">
+        <div class="form-control">
+            <input type="text" name="fname" id="fname" placeholder="First Name" required>
+        </div>
+        <div class="form-control">
+            <input type="text" name="lname" id="lname" placeholder="Last Name" required>
+        </div>
+        <div class="form-control">
+            <input type="email" name="email" id="email" placeholder="Email Address" required>
+        </div>
+        <div class="form-control">
+            <input type="password" name="pwd" id="pwd" placeholder="Password" required>
+        </div>
+        <div class="form-control">
+            <button class="text" type="submit">Sign Up</button>
+        </div>
+    </form>
+    <p class="text">Already a member? <a href="index.html">Sign In</a></p>
+</main>
+
+<script type="text/javascript" src="js/script.js"></script>
+     
  </div>
+
 </body>
-<script src="js/js.js"></script>
+
 </html>

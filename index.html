@@ -2,7 +2,7 @@
 
 <html lang="en">
 <head>
-
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>loginToBookIn</title>
@@ -13,26 +13,24 @@
   <div class="container">
     <h1>Welcome!</h1>
     <img src="img/login logo.png" alt="logo" id="logo">
-    <p>Please enter login details</p>
-    <div id="login-error-msg-holder">
-      <p id="login-error-msg">Invalid username<span id="error-msg-second-line">and/or password</span></p>
-    </div>
-   
-    <form id="login-form" action="js.js" method="post">
-     <div class="form-control">
-        <input type="text" placeholder="username" name="username"required>
-     </div>
-
+    <p class="text" >Please enter login details</p> 
+    <form role="form" onsubmit="signIn(event);" autocomplete="off">
       <div class="form-control">
-       <input type="password" placeholder="Password" name="password" required>
+          <input type="email" name="email" id="email" placeholder="Email Address" required>
       </div>
+      <div class="form-control">
+          <input type="password" name="pwd" id="pwd" placeholder="Password" required>
+      </div>
+      <div class="form-control">
+          <button class="text" type="submit">Sign In</button>
+      </div>
+  </form>
+  <p class="text">Don't have an account? <a href="reg.html">Sign Up</a> here</p>
+</main>
 
-     <input href="homepage.html"  type="submit" value="login" id="login-form-submit">
-
-      <a class="reg" href="reg.html"><p>Or click here to register new account</p></a>
-    </form>
+<script type="text/javascript" src="js/script.js"></script>
   </div>
 
 </body>
-<script src="js/js.js"></script>
+
 </html>

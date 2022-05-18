@@ -34,28 +34,20 @@
 p{
   text-align: center;
   margin-bottom: 30px;
- color: aliceblue;
  font-weight: bolder;
-
+}
+.webname{
+  text-align: center;
+  margin-bottom: 30px;
+ color:whitesmoke;
+ font-weight: bolder;
 }
 .container a {
   text-decoration: none;
   color: #e8d7bc;
 }
-#login-form-submit{
-  display: inline-block;
-  width: 100%;
-  cursor: pointer;
-  background-color: #3b465e;
-  padding: 15px;
-  font-family: inherit;
-  font-size: 16px;
-  border: 0;
-  border-radius: 5px;
-}
-.btn:focus{
-  outline: 0;
-}
+
+
 .btn:active{
   transform: scale(0.98);
 }
@@ -125,7 +117,7 @@ p{
   width: 15%;
   background-color: #192237;
   height: 100%;
-  position: fixed;
+  display: flex;
   overflow: auto;
   border-radius: 37px;
  
@@ -148,13 +140,9 @@ p{
   color:#7b7c90;
   font-family:'Muli', sans-serif ;
   text-decoration: none;
+  
 }
-.reg{
-  font-family: inherit;
-  font-size: 16px;
-  border: 0;
-  text-align: justify;
-}
+
 .navbar{
   display: flex;
   background-color: #192237;
@@ -162,11 +150,15 @@ p{
 
   
 }
+
 .sort{
  display: flex;
 width: 800px;
 padding-right: 60px;
-margin-bottom: 20px;}
+margin-top: 40px;
+margin-right: 40px;
+margin-bottom: 20px;
+justify-content: center;flex-direction: row;padding-left: 168px;}
 
 
 .collection-sort{
@@ -175,6 +167,8 @@ margin-bottom: 20px;}
   padding-right: 20px;
   margin-left: 10px;
   margin-top: 50px;
+
+
   
 }
 .books{
@@ -232,11 +226,7 @@ section{
     flex-direction: column;
   }
 }
-@media(max-width:480px){
-  .navbar{
-    flex-direction: column;
-  }
-}
+
 .home-page{
   background-color: #1b2846;
   color:#7b7c90;
@@ -264,7 +254,7 @@ section{
   background-color: #717171;
 }
 .text {
-  color: #f2f2f2;
+  color: #a9a9a9;
   font-size: 15px;
   padding: 8px 12px;
   bottom: 8px;
@@ -306,6 +296,8 @@ section{
 .column2 {
   flex: 33.33%;
   padding-left: 47px;
+  margin-left: 100px;
+ 
 
 }
 .login-error-msg{
@@ -325,22 +317,19 @@ section{
   display: flex;
  padding-top: 50px;
  margin-top: 50px;
-  margin-left: 180px;
+  margin-left: auto;
 font-size:xx-large;
 font-family: Muli;}
 
-.searchbar{
-
-  border-radius: 37px;
-  font-size: 60px;
-  padding-right: 85px;
-  padding-top: 40px;
+.description{
+  text-align: left;
+  font-size: 15px;
+  font-family: Muli;
 }
-  .searchbarbox{
-    height: 40px;
-    width: 250px;
-    border-radius: 27px;
-    padding-right:20px;
-    text-align:right;
-   margin-top: 50px;
-  }
+.logohome{
+  margin-top: 40px;
+  width: 300px;
+}
+#col{
+  text-align: right;
+}
