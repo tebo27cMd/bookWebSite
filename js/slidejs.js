@@ -1,4 +1,5 @@
 
+/*slide effect */
 var myIndex = 0;
 carousel();
 
@@ -13,3 +14,4 @@ function carousel() {
   x[myIndex-1].style.display = "block";  
   setTimeout(carousel, 4000);    
 }
+
