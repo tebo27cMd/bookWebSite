@@ -19,7 +19,8 @@ const signUp = e => {
         localStorage.setItem('formData', JSON.stringify(formData));
         document.querySelector('form').reset();
         document.getElementById('fname').focus();
-        alert("Account Created.\n\nPlease Sign In using the link below.");
+        alert("Account Created.\n\nPlease Sign In .");
+        location.href ="index.html";
     }
     else{
         alert("You have already signed up .\n\nPlease Sign In using the link below.");

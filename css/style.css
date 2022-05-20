@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 *{
-  box-sizing: border-box;
+ box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -12,7 +12,6 @@
 }
 #login{
   background-color: #1b2846;
-  color:#7b7c90;
   font-family: 'Muli', sans-serif;
   display: flex;
   flex-direction: column;
@@ -22,16 +21,21 @@
   overflow: hidden;
   border: 1;
 }
+.welcometag{
+  font-size: xx-large;
+  font-family: 'Muli', sans-serif;
+  color:#D4F0F7;
+}
 .container{
   background-color: #192237;
   padding: 20px 40px;
-  border-radius: 5px;
+  border-radius: 37px;
 }
 .container h1 {
   text-align: center;
   margin-bottom: 30px;
 }
-p{
+.p{
   text-align: center;
   margin-bottom: 30px;
  font-weight: bolder;
@@ -47,13 +51,10 @@ p{
   color: #e8d7bc;
 }
 
-
 .btn:active{
   transform: scale(0.98);
 }
-.text{
-  margin-top: 30px;
-}
+
 .form-control{
   position: relative;
   margin: 20px 0 40px;
@@ -139,18 +140,13 @@ p{
 #col{
   color:#7b7c90;
   font-family:'Muli', sans-serif ;
-  text-decoration: none;
-  
+  text-decoration: none;  
 }
-
 .navbar{
   display: flex;
   background-color: #192237;
-  border-radius: 37px;
-
-  
+  border-radius: 37px; 
 }
-
 .sort{
  display: flex;
 width: 800px;
@@ -159,17 +155,12 @@ margin-top: 40px;
 margin-right: 40px;
 margin-bottom: 20px;
 justify-content: center;flex-direction: row;padding-left: 168px;}
-
-
 .collection-sort{
   display: flex;
   flex-direction: column;
   padding-right: 20px;
   margin-left: 10px;
   margin-top: 50px;
-
-
-  
 }
 .books{
   display: flex;
@@ -178,8 +169,6 @@ justify-content: center;flex-direction: row;padding-left: 168px;}
   margin-bottom: 1rem;
   margin-top: 1rem;
   flex-wrap: wrap;
- 
-  
 }
 section{
   justify-content: safe;
@@ -193,24 +182,8 @@ section{
   flex-direction: row;
   background-color:#192237;
   border-radius: 37px;
-  border:1px #7b7c90;
+  border:1px #7b7c90; 
   
-  
-}
-.product-card-static{
-  background-image: url("../new1/img/boo2.jpg");
-  background-size: cover;
-}
-
-.product-image img{
- 
-  max-width: 100%;
-  max-height: 100%;
-
-
-}
-.product-info{
-  margin-top: auto;
 }
 .books .product-card:first-child,
 .books .product-card:nth-child(2){
@@ -251,15 +224,17 @@ section{
   transition: background-color 0.6s ease;
 }
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #474040;
 }
 .text {
+  margin-top: 30px;
   color: #a9a9a9;
   font-size: 15px;
   padding: 8px 12px;
   bottom: 8px;
   width: 100%;
   text-align: center;
+  border-radius: 37px;
 }
 /* Fading animation */
 .fade {
@@ -330,6 +305,39 @@ font-family: Muli;}
   margin-top: 40px;
   width: 300px;
 }
+.webname{
+  color:#D4F0F7;
+  border-radius:50%;
+  animation:op 3s ease infinite;
+}
+@keyframes op{
+0%{
+  opacity:0;
+}
+50%{
+  opacity:1;
+}
+100%{
+  opacity:0;
+} 
+}
+.fa-solid:hover {
+  visibility: visible;
+  color:#0097e1;
+  border-radius:50%;
+  animation:op 3s ease infinite;
+}
+@keyframes op{
+0%{
+  opacity:0;
+}
+50%{
+  opacity:1;
+}
+100%{
+  opacity:0;
+}
+}
 #col{
   text-align: right;
 }
@@ -359,7 +367,7 @@ font-family: Muli;}
   padding-top: 30%;
  
    /* COLORS */
-  background-color: #1d2951 ;
+  background-color: #0097e1 ;
   color: #fff;
 }
  
@@ -369,8 +377,11 @@ font-family: Muli;}
   transition: opacity 0.5s;
 }
 .fullwrap:hover .fullcap {
-  visibility: visible; opacity: 0.9;
+  visibility: visible; opacity: 0.92;
 }
 .colorT{
  color: white;
 }
+
+
+ 
