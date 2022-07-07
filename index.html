@@ -9,12 +9,15 @@
     <link rel="stylesheet" href="css/style.css"/>
 
 </head>
+<video autoplay muted loop id="myVideo"  poster="img/altbg.jpg">
+  <source src="img/bgvid.mp4" type="video/mp4">
+</video>
 <body  id="login">
   <div >
   <div class="container">
     <h1 class="welcometag">Welcome!</h1>
     <img src="img/login logo.png" alt="logo" id="logo">
-    <p class="webname" >Please enter login details</p> 
+    <p class="text" >Please enter login details</p> 
     <form role="form" onsubmit="signIn(event);" autocomplete="off">
       <div class="form-control">
           <input type="email" name="email" id="email" placeholder="Email Address" required>

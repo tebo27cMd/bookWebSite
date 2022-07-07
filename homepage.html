@@ -6,6 +6,7 @@
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <script src="https://kit.fontawesome.com/6decfadbe6.js" crossorigin="anonymous"></script>
   </head>
+  
  <nav class="navbar" >
   <div class="headingS">
    <div> 
@@ -15,47 +16,51 @@
      <div>
        <img class="logohome" src="img/logo.png" alt="logo" id="logo">
       </div>
+      
+      
      <div class="sort">
+       <div class=" collection-sort "> 
+        <div class="iconShopping" >
+          <div class="sum-prices">
+            <!--Shopping cart logo-->
+            <i class="fa-solid fa-shopping-cart shoppingCartButton" aria-hidden="true"></i>
+            <!--The total prices of products in the shopping cart -->
+            <h6 id="sum-prices"></h6>
+        </div>
+      
+        </div>
+       </div>
          <div class="collection-sort">
-             <a id="col" href="homepage.html"><i class="fa-solid fa-house-user fa-2x "></i></a>
-         </div>
-
-         <div  class="collection-sort">
-             <a class="fa-solid" id="col"  href="featured.html">Featured</a>  
+             <a class="col" href="homepage.html"><i class="fa-solid fa-house-user fa-2x "></i></a>
          </div>
 
           <div  class="collection-sort">
-             <a class="fa-solid" id="col" href="selling.html">Top Selling</a> 
+             <a class="fa-solid col" href="selling.html">Top Selling</a> 
          </div>
 
          <div  class="collection-sort">
-             <a id="col" href="index.html"><i class="fa-solid fa-arrow-right-from-bracket "></i></a>  
+             <a class="col" href="index.html"><i class="fa-solid fa-arrow-right-from-bracket "></i></a>  
          </div>
      </div>
  </nav>
- <body class="home-page">
+
+ <body id="container" class="home-page">
+
    <section class="books" >
      <div class="product-card">
        <div class="product-image">
          <div class="mySlides">
-            <a href="featured.html"> 
               <img class="imgsize"  src="img/boom1.jpg"style="width:100%">
-              
-           </a>
            <div class="text"> Bad Guy</div>
          </div>
 
          <div class="mySlides">
-         <a href="featured.html"> 
             <img class="imgsize" src="img/boom4.jpg" style="width:100%">
-          </a>
           <div class="text"> The Shining</div>
          </div>
 
           <div class="mySlides">
-          <a href="featured.html"> 
            <img class="imgsize" src="img/boom3.jpg" style="width:100%">
-          </a>
          <div class="text"> Harry Potter And The Half Blood Prince</div>
          </div> 
        </div>
@@ -64,66 +69,143 @@
      <div class="product-card">
        <div class="product-table">
          <div class="row">
-           <div   class="column">
-             <div class="fullwrap">
+           <div   class="column product-under">
+             <div class="fullwrap product-under">
                 <a href="selling.html"> 
                   <img  class="imgsize" src="img/boo4.jpg" alt="Snow" style="width:100%">
                  <div class="fullcap">It is the amusing and enlightening story of four characters who live in a maze and look for cheese to nourish them and make them happy. Cheese is a metaphor for what you want to have in life, for example a good job, a loving relationship. The maze is where you look for what you want, perhaps the organisation you work in, or the family or community you live in.</div>
                 </a>
               </div>
-             <div class="text" >Who Moved My Cheese</div>
+             <div class="text productName" >Who Moved My Cheese</div>
+             <h6 class="price">
+              R<span class="priceValue">50</span>
+             </h6>
+             <div class="product-under">
+            </div>
+              <figure class="product-image">  
+            <button
+            class="btn btn-small addToCart"
+            data-product-id="0"
+        >
+            <i class="fas fa-cart-plus"></i>Add
+            to cart
+        </button>
            </div>
 
-           <div class="column">
-             <div class="fullwrap">
+           <div class="column product-under">
+             <div class="fullwrap product-under">
                <a href="selling.html"> 
                   <img  class="imgsize" src="img/boo5.jpg" alt="Forest" style="width:100%">
                  <div class="fullcap">What do they do? Where do they shop? What do they drive?How do they invest? Where did their ancestors come from?  How did they get rich?Can I ever become one of them? Get the answers in The Millionaire Next Door, the never-before-told story about wealth in America. You'll be surprised at what you find out....</div>
                </a>
               </div>
-              <div class="text">The Millionaire Next Door</div>
+              
+               <div class="text productName ">The Millionaire Next Door</div>
+               <h6 class="price">
+                R<span class="priceValue">100</span>
+               </h6>
+               <div class="product-under">
+              </div>
+              <figure class="product-image">  
+                <button
+                class="btn btn-small addToCart"
+                data-product-id="1"
+            >
+                <i class="fas fa-cart-plus"></i>Add
+                to cart
+            </button>
            </div>
-
-           <div class="column">
-             <div class="fullwrap">
+           <div class="column  product-under">
+             <div class="fullwrap product-under">
                 <a href="selling.html"> 
                   <img  class="imgsize" src="img/boo6.jpg" alt="Mountains" style="width:100%">
                  <div class="fullcap">  No matter your goals, Atomic Habits offers a proven framework for improving--every day. James Clear, one of the world's leading experts on habit formation, reveals practical strategies that will teach you exactly how to form good habits, break bad ones, and master the tiny behaviors that lead to remarkable results.</div> 
                </a>
               </div>
-             <div class="text">Atomic Habits</div>
+             <div class="text productName">Atomic Habits</div>
+             <h6 class="price">
+              R<span class="priceValue">150</span>
+             </h6>
+             <div class="product-under">
+            </div>
+              <figure class="product-image">  
+            <button
+            class="btn btn-small addToCart"
+            data-product-id="2" >
+            <i class="fas fa-cart-plus"></i>Add
+            to cart
+        </button>
            </div>
          </div>
 
          <div class="row">
-           <div class="column">
-             <div class="fullwrap">
+           <div class="column  product-under">
+             <div class="fullwrap  product-under">
                <a href="https://www.goodreads.com/book/show/2657.To_Kill_a_Mockingbird?ac=1&from_search=true&qid=cJo6ulqFo1&rank=1">
                  <img  class="imgsize" src="img/boo7.jpg" alt="Snow" style="width:100%">   
                  <div class="fullcap">Compassionate, dramatic, and deeply moving,It takes readers to the roots of human behavior - to innocence and experience, kindness and cruelty, humor and pathos. Now with over 18 million copies in print and translated into forty languages, this regional story by a young Alabama woman claims universal appeal. </div> 
                </a>
              </div>
-             <div class="text">To Kill A Mockingbird</div>
+             <div class="text productName">To Kill A Mockingbird</div>
+             <h6 class="price">
+              R<span class="priceValue">200</span>
+             </h6>
+             <div class="product-under">
+            </div>
+              <figure class="product-image">  
+            <button
+            class="btn btn-small addToCart"
+            data-product-id="3"
+        >
+            <i class="fas fa-cart-plus"></i>Add
+            to cart
+        </button>
           </div>
 
-         <div class="column">
-           <div class="fullwrap">
+         <div class="column product-under">
+           <div class="fullwrap product-under">
               <a href="https://www.goodreads.com/book/show/2767052-the-hunger-games?ac=1&from_search=true&qid=eAiP9nyU9N&rank=1">
                 <img  class="imgsize" src="img/boo8.jpg" alt="Forest" style="width:100%">
                 <div class="fullcap">A shining Capitol surrounded by twelve outlying districts. The Capitol is harsh and cruel and keeps the districts in line by forcing them all to send one boy and one girl between the ages of twelve and eighteen to participate in the annual Hunger Games, a fight to the death on live TV</div>
               </a>
            </div>
-            <div class="text">The Hunger Games </div>
+            <div class="text productName">The Hunger Games </div>
+            <h6 class="price">
+              R<span class="priceValue">50</span>
+             </h6>
+             <div class="product-under">
+            </div>
+              <figure class="product-image">  
+            <button
+            class="btn btn-small addToCart"
+            data-product-id="4"
+        >
+            <i class="fas fa-cart-plus"></i>Add
+            to cart
+        </button>
           </div>
 
-         <div class="column">
-            <div class="fullwrap">
+         <div class="column product-under">
+            <div class="fullwrap product-under">
              <a href="https://www.goodreads.com/book/show/6186357-the-maze-runner?ac=1&from_search=true&qid=1e38pB9xA2&rank=1">
                <img  class="imgsize" src="img/boo9.jpg" alt="Mountains" style="width:100%">
                <div class="fullcap">When Thomas wakes up in the lift, the only thing he can remember is his name. He’s surrounded by strangers—boys whose memories are also gone. Nice to meet ya, shank. Welcome to the Glade. Outside the towering stone walls that surround the Glade is a limitless, ever-changing maze. It’s the only way out—and no one’s ever made it through alive.</div>
              </a>
            </div>
-            <div class="text">The Maze Runner</div>
+            <div class="text productName">The Maze Runner</div>
+            <h6 class="price">
+              R<span class="priceValue">50</span>
+             </h6>
+             <div class="product-under">
+            </div>
+              <figure class="product-image">  
+            <button
+            class="btn btn-small addToCart"
+            data-product-id="1"
+        >
+            <i class="fas fa-cart-plus"></i>Add
+            to cart
+        </button>
          </div>
        </div>
      </div>
@@ -201,6 +283,122 @@
        </div>
      </div>
    </section>
+   <section class="books" >
+
+
+    <div class="product-card">
+      <div class="product-table">
+        <div class="row">
+          <div class="column">
+            <a href="https://www.goodreads.com/book/show/9648068-the-first-days?ac=1&from_search=true&qid=4HA1CMZLxj&rank=3">
+              <img  class="imgsize" src="img/boo10.jpg" alt="Snow" style="width:100%">
+            </a>
+            <div class="text">The First Days</div>
+          </div>
+          <div class="column">
+            <a href="https://www.goodreads.com/book/show/74821.Day_by_Day_Armageddon?ac=1&from_search=true&qid=27OotmXwau&rank=1">
+              <img  class="imgsize" src="img/boo11.jpg" alt="Forest" style="width:100%">
+            </a>
+             <div class="text">Day by Day Armageddon</div>
+          </div>
+          <div class="column">
+            <a href="https://www.goodreads.com/book/show/8908.World_War_Z?ac=1&from_search=true&qid=K7X7fuA4i8&rank=1">
+              <img  class="imgsize" src="img/boo12.jpg" alt="Mountains" style="width:100%">
+            </a>
+            <div class="text">World War Z</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-table">
+        <div class="row">
+          <div class="column">
+             <a href="https://www.goodreads.com/book/show/56416637-write-my-name-across-the-sky?ac=1&from_search=true&qid=OMBO9OWkE1&rank=1#">
+               <img  class="imgsize" src="img/boo13.jpg" alt="Snow" style="width:100%">
+            </a>
+             <div class="text">Write My Name Across The Sky</div>
+          </div>
+          <div class="column">
+            <a href="selling.html">
+               <img  class="imgsize" src="img/boo14.jpg" alt="Forest" style="width:100%">
+            </a>
+             <div class="text">I Was Better Last Night</div>
+          </div>
+          <div class="column">
+            <a href="selling.html">
+               <img  class="imgsize" src="img/boo15.jpg" alt="Mountains" style="width:100%">
+            </a>
+             <div class="text"> Billy Porter Unprotected</div>
+          </div>
+        </div> 
+       </div>
+    </div>
+    <div class="product-card">
+      <div class="product-table">
+        <div class="row">
+          <div class="column">
+            <a href="https://www.goodreads.com/book/show/54610962-what-comes-after?ac=1&from_search=true&qid=6WBlZ8tqId&rank=1">
+               <img  class="imgsize" src="img/boo16.jpg" alt="Snow" style="width:100%">
+            </a>
+            <div class="text">What Comes After</div>
+          </div>
+          <div class="column">
+           <a href="https://www.goodreads.com/book/show/54610962-what-comes-after?ac=1&from_search=true&qid=6WBlZ8tqId&rank=1">
+              <img  class="imgsize" src="img/boo16.jpg" alt="Snow" style="width:100%">
+           </a>
+           <div class="text">What Comes After</div>
+         </div>
+         <div class="column">
+           <a href="https://www.goodreads.com/book/show/54610962-what-comes-after?ac=1&from_search=true&qid=6WBlZ8tqId&rank=1">
+              <img  class="imgsize" src="img/boo16.jpg" alt="Snow" style="width:100%">
+           </a>
+           <div class="text">What Comes After</div>
+         </div>
+          <div class="column">
+            <a href="https://www.goodreads.com/book/show/49550950-this-town-sleeps?ac=1&from_search=true&qid=LQVB5FV2fT&rank=1">
+              <img  class="imgsize" src="img/boo17.jpg" alt="Forest" style="width:100%">
+            </a>
+             <div class="text">This Town Sleeps</div>
+           </div>
+          <div class="column">
+            <a href="https://www.goodreads.com/book/show/40274582-american-spy?ac=1&from_search=true&qid=VgJKitIBXa&rank=2">
+             <img  class="imgsize" src="img/boo18.jpg" alt="Mountains" style="width:100%">
+           </a>
+            <div class="text">American Spy</div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+   <div class="cartBox">
+      <div class="cart">
+       <i class="fa fa-close"></i>
+       <h1>Cart</h1>
+       <div class="producstOnCart hide">
+        <div class="overlay"></div>
+        <div class="top">
+          
+        </div>
+        <ul id="buyItems">
+          <h4 class="empty">Your shopping cart is empty</h4>
+          <!-- <li class="buyItem">
+					  <img src="img/">
+					  <div>
+						<h5>Products Name</h5>
+						<h6>R</h6>
+						<div>
+							<button  class="button-minus">-</button>
+							<span class="countOfProduct">1</span>
+							<button  class="button-plus">+</button>
+							</div>
+					  </div>
+					</li> -->
+        </ul>
+        <button class="btn checkout hidden">Check out</button>
+    </div> 
+      </div>
+   </div>
  </body> 
  <footer>
    <div class="product-card">
@@ -213,6 +411,10 @@
      </div>
    </div>
  </footer>
+ <script src="js/cart.js"></script>
  <script src="js/slidejs.js"></script>
- <script src="js/loginreg.js"></script>
+ <script src="js/shop.js"></script>
+ 
+ 
+ <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 </html>

@@ -41,3 +41,8 @@ function signIn(e) {
     }
     e.preventDefault();
 }
+/*background video */
+var vid=document.getElementById("myVideo");
+vid.playbackRate=0.3;
+
+
