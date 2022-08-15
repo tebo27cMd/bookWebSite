@@ -496,3 +496,10 @@ padding-right: 5px;
   margin-top: 190px;
   margin-right:10px ;
 }
+.breaker{
+  display: flex;
+  justify-items: center;
+  padding-top: 130px;
+ padding-left: 150px;
+ padding-right: 50px;
+}
