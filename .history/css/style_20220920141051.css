@@ -472,7 +472,7 @@ font-family: Muli;}
 
  }
  .producstOnCarthide{
-  flex-wrap: wrap;
+ 
  }
  .producstOnCart  .checkout {
   flex-wrap: wrap;
@@ -496,8 +496,7 @@ font-family: Muli;}
  }
 
 .buyItem img{
-  flex-wrap: wrap;
-
+  display: flex;
   max-width: 190px;
 border-radius: 12px;
 padding-right: 5px;

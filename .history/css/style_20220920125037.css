@@ -434,10 +434,6 @@ font-family: Muli;}
    transform: scale(0);
    border-radius: 27px;
  }
- .cart{
-  display: flex;
-  flex-wrap: wrap;
- }
  .cartBox.active{
    display: flex;
    flex-wrap: wrap;
@@ -471,9 +467,7 @@ font-family: Muli;}
    color: #0097e1;
 
  }
- .producstOnCarthide{
-  flex-wrap: wrap;
- }
+ .producstOnCart .hide
  .producstOnCart  .checkout {
   flex-wrap: wrap;
   display: flex;
@@ -485,6 +479,8 @@ font-family: Muli;}
   color: #eee;
   cursor: pointer;
 }
+
+
  .price{
    text-align: center;
    font-size: 1rem;
@@ -496,8 +492,7 @@ font-family: Muli;}
  }
 
 .buyItem img{
-  flex-wrap: wrap;
-
+  display: flex;
   max-width: 190px;
 border-radius: 12px;
 padding-right: 5px;

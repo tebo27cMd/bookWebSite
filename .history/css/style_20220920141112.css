@@ -497,7 +497,7 @@ font-family: Muli;}
 
 .buyItem img{
   flex-wrap: wrap;
-
+  display: flex;
   max-width: 190px;
 border-radius: 12px;
 padding-right: 5px;
